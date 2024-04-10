@@ -7,3 +7,19 @@
 
 ## Model Architecture
 ![Teaser figure](figures/pipeline.png)
+
+
+
+## Citation
+
+
+```
+@misc{gu2024swapanything,
+      title={SwapAnything: Enabling Arbitrary Object Swapping in Personalized Visual Editing}, 
+      author={Jing Gu and Yilin Wang and Nanxuan Zhao and Wei Xiong and Qing Liu and Zhifei Zhang and He Zhang and Jianming Zhang and HyunJoon Jung and Xin Eric Wang},
+      year={2024},
+      eprint={2404.05717},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
