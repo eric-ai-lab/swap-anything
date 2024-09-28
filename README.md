@@ -116,10 +116,12 @@ We also provide a webpage in the `html` folder so you can browse all results at 
 
 
 
-## A few tips
-1. For face swapping task, usually higher variable swapping ratio yeild a better performance
-2. If the swapping results has a huge shape deformation, it could be the automatic crop issue. Manully input the crop x1, y1, x2, y2 so that (x2-x1)≈(y2-y1). It is also useful for detailed manipulation. For example, set (x2-x1)>(y2-y1) would make the human face wider, and set (x2-x1)>(y2-y1) would make the human face narrower horizontally.
-3. If the swapping results is too similar to the source image, and did not transfer the target identity, you should decrease the swapping ratio. If the swapping result has artifacts or not harmonious, (maybe) increase the swapping ratio.
+## A Few Tips for Better Performance
+1. For face swapping tasks, usually a higher variable swapping ratio yields better performance.
+2. If the swapping results show significant shape deformation, it could be due to the automatic cropping issue. Manually input the crop coordinates `x1, y1, x2, y2` so that `(x2 - x1) ≈ (y2 - y1)`. This is also useful for detailed manipulation. For example:
+   - Setting `(x2 - x1) > (y2 - y1)` will make the face wider.
+   - Setting `(x2 - x1) < (y2 - y1)` will make the face narrower horizontally.
+3. If the swapping result is too similar to the source image and does not transfer the target identity, try decreasing the swapping ratio. If the result contains artifacts or is not harmonious, you may want to increase the swapping ratio.
 
 
 
