@@ -1,0 +1,25 @@
+cuda_id: 1
+do_not_crop: False # Use the whole image when True
+pre_defined_crop: [] # [x1, y1, x2, y2]
+blend_width: 20
+total_diffusion_steps: 50
+guidance_scale: 7.5
+
+
+source_image_path: 'source_image/person1/person1.jpg'
+source_subject_word: 'person'
+source_prompt: "a photo of a person"
+target_subject_word: 'sks'
+target_prompt: "a photo of sks man"
+concept_model_path: "./diffusers/examples/dreambooth/checkpoints/checkpoint_*-sdv1-5"
+# concept_model_path = "runwayml/stable-diffusion-v1-5"
+
+
+self_output_range: [0.1, 0.3, 0.5, 0.7]
+self_map_range: [0.0]
+cross_map_range: [0.1, 0.3, 0.5, 0.7]
+add_zero_to_range: True
+
+end_blend: 52
+
+is_show_result: True # if True, show the result image in notebook mode
